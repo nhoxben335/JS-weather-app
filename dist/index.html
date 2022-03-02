@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>World Weather</title>
+</head>
+<body>
+
+    <main>
+        <!-- Display current temperature -->
+        <div id="app-container">
+            <div class="current_weather">
+                <h1 id="city"></h1>
+                <h3 id="date"></h3>
+            </div>
+            <div class="temperature">
+                <img id="temp_icon" src="assets/icons/01d.svg" alt="weather">
+                <p><span id="temp-value">0</span><span id="temp-unit">&#176c</span></br><span id="temp-status">Mostly Sunny</span></p>
+            </div>
+        </div>
+
+
+        <!-- Display Advanced temperature info -->
+        <div class='some-page-wrapper'>
+          <div id="controls">
+            <input id="search" type="text" placeholder="Find Location">
+          </div>
+            <div class='row'>
+              <div class='column'>
+                <div class='col-temp'>
+                    <p><span id="temp-value-high">17</span><span id="temp-unit-high">&#176c</span></br><span id="temp-status-high">High</span></p>
+                </div>
+              </div>
+              <div class='column'>
+                <div class='col-wind'>
+                    <p><span id="wind-value">7</span><span id="wind-unit">mph</span></br><span id="wind-status">Wind</span></p>
+                </div>
+              </div>
+              <div class='column'>
+                <div class='col-sun'>
+                    <p><span id="sunrise-value">5:30</span></br><span id="sunrise-status">Sunrise</span></p>
+                </div>
+              </div>
+            </div>
+            <div class='row 2'>
+              <div class='column'>
+                <div class='col-temp'>
+                    <p><span id="temp-value-low">12</span><span id="temp-unit-low">&#176c</span></br><span id="temp-status-low">Low</span></p>
+                </div>
+              </div>
+              <div class='column'>
+                <div class='col-humidity'>
+                    <p><span id="humidity-value">30</span><span id="humidity-unit">%</span></br><span id="humidity-status">Humidity</span></p>
+                </div>
+              </div>
+              <div class='column'>
+                <div class='col-sun'>
+                    <p><span id="sunset-value">6:45</span></br><span id="sunset-status">Sunset</span></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <!-- Today's Weather -->
+        <div class='weather-today'>
+            <h3 id="lbl-weather">Next Few Hours</h3>
+            <div class='weather-row'>
+
+                <div class='weather-column'>
+                  <div class='col-1'>
+                      <p id="time1">3am</p>
+                      <img id="time1-temp-icon" src="assets/icons/01d.svg" alt="weather">
+                      <p><span id="time1-temp">17</span><span id="time1-temp-unit">&#176c</span></p>
+                    </div>
+                </div>
+                <div class='weather-column'>
+                    <div class='col-2'>
+                        <p id=time2>6am</p>
+                      <img id="time2-temp-icon" src="assets/icons/02d.svg" alt="weather">
+                      <p><span id="time2-temp">17</span><span id="time2-temp-unit">&#176c</span></p>
+                    </div>
+                </div>
+                <div class='weather-column'>
+                    <div class='col-3'>
+                        <p id=time3>9am</p>
+                      <img id="time3-temp-icon" src="assets/icons/04d.svg" alt="weather">
+                      <p><span id="time3-temp">17</span><span id="time3-temp-unit">&#176c</span></p>
+                    </div>
+                </div>
+                <div class='weather-column'>
+                    <div class='col-4'>
+                        <p id=time4>12pm</p>
+                      <img id="time4-temp-icon" src="assets/icons/10d.svg" alt="weather">
+                      <p><span id="time4-temp">17</span><span id="time4-temp-unit">&#176c</span></p>
+                    </div>
+                  </div>
+                  <div class='weather-column'>
+                      <div class='col-5'>
+                        <p id=time5>3pm</p>
+                        <img id="time5-temp-icon" src="assets/icons/11n.svg" alt="weather">
+                        <p><span id="time5-temp">17</span><span id="time5-temp-unit">&#176c</span></p>
+                      </div>
+                  </div>
+                  <div class='weather-column'>
+                      <div class='col-6'>
+                        <p id=time6>6pm</p>
+                        <img id="time6-temp-icon" src="assets/icons/50d.svg" alt="weather">
+                        <p><span id="time6-temp">17</span><span id="time6-temp-unit">&#176c</span></p>
+                      </div>
+                  </div>
+              </div> 
+          </div>
+    </main>
+
+    <!-- Link to app scripts -->
+    <script src="main.js"></script>
+
+    <!-- Link to a third-party script - Animatelo -->
+    <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
+    <script src="https://cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+</body>
+
+</html>
